@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/Love_Heart_symbol.png">
+    <script src="index.js"></script>
+    <title>Black Jack</title>
+</head>
+<body>
+    <nav>
+        <ul id="first">
+           <li id="btn1">
+                <button onclick="window.location.reload()">New Game</button>
+            </li>
+             <li id="black">
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+                BLACK JACK
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+                <img src="./Images/card-symbol.png" alt="" width="20px">
+            </li>
+            <li id="btn2">
+                <button onclick="window.close()">
+                    <img src="./Images/cancel.png" alt="" width="13px">
+                    Quit
+                </button>
+            </li>
+        </ul>
+    </nav>
+  <br><br>
+   <h2 id="user-score">User Score: <span id="user-sum"></span></h2>
+   <div id="user-cards">
+    <div id="user1-cards" class="user-cards"></div>
+    <div id="user2-cards" class="user-cards"></div>
+   </div>
+    <h2 id="results"></h2>
+
+   <div id="dealer-cards">
+        
+   </div>
+   <h2 id="deal-score">Dealer Score: <span id="dealer-sum"></span></h2>
+   <br>
+   <div id="btns">
+        <button id="deal" onclick="startGame()">Deal</button>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <button id="split">Split</button>
+        
+   </div>
+   <button id="rules"><img src="./Images/rules.png" alt="" width="25px"></button>
+   <div class="game-rule">
+       <ul>
+            <li>The cards are dealt to the player and to the dealer</li>
+            <li>One of the dealer's cards is flipped down</li>
+            <li>The goal of the game is to get as close to 21 without going over</li>
+            <li>The player has to option to get another card by clicking the "Hit Me" button</li>
+            <li>By clicking the "Stand" button the dealer's card is revealed and whoever is closer to 21 without going over wins</li>
+            <li>When calculating the total the card values are calculated in the following manner:
+                Ace: 1 or 11 2-9: Their value 10, Jack, Queen, King: 10
+            </li>
+            <li>If the first two cards are worth the same the player will be given a "Split" button Clicking that will split the player's hand into two independent hands each with one of the original cards and each hand will receive one more card</li>
+        </ul>
+    </div>
+ 
+</body>
+</html>
